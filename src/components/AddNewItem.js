@@ -18,6 +18,7 @@ const AddNewItem = (props) => {
         let todoItem = {
             id: `todo${todoId}`,
             title: todo,
+            isComplete: false
         }
         console.log(todoItem);
         // map is not a function
