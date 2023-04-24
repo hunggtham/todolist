@@ -8,11 +8,7 @@ const TodoList = () => {
     // { id: 'todo1', title: 'Hit the gym', isComplete: false},
 
     const [listTodo, setListTodo] = useState([
-        { id: 'todo1', title: 'Learn English', isCompleted: false },
-        // { id: 'todo2', title: 'Learn React', isCompleted: false },
-        // { id: 'todo3', title: 'Play Soccer', isCompleted: false },
-        // { id: 'todo4', title: 'Meeting', isCompleted: false },
-        // { id: 'todo5', title: 'Clean my House', isCompleted: false },
+        // { id: 'todo1', title: 'Learn English', isCompleted: false },
 
     ])
     return (
