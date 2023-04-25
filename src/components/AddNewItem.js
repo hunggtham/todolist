@@ -44,15 +44,15 @@ const AddNewItem = (props) => {
         // setInputValue("");
 
         //new method
-        if (inputValue.replace(/\s+/g, ' ') === '') {
+        if (inputValue.replace(/\s+/g, '') === '') {
             toast.warning("Todo name is not empty");
         }
-        else if (listTodo.some(item => item.id == inputValue.trim())) {
+        else if (listTodo.some(item => item.id == inputValue.replace(/\s+/g, ''))) {
             toast.warning("Existing Task");
         }
         else {
             // clear space betwwen 2 word to create unique id(need fix)
-            setListTodo(todo => [...todo, { id: inputValue.replace(/\s+/g, ' '), title: inputValue, isCompleted: false }])
+            setListTodo(todo => [...todo, { id: inputValue.replace(/\s+/g, ''), title: inputValue, isCompleted: false }])
             toast.success(`${inputValue} is added Todo List`);
             setInputValue("");
         }
